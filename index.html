@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beds24予約</title>
+
+    <!-- jQueryとBeds24ウィジェットのJS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js"></script>
+  </head>
+  <body>
+    <!-- ウィジェットの表示場所 -->
+    <div id="bookWidget-136008-259760-0-1742889285"></div>
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#bookWidget-136008-259760-0-1742889285").bookWidget({
+          propid: 259760,
+          formAction: "https://beds24.com/booking.php",
+          widgetLang: "ja",
+          widgetType: "BookingBoxMini",
+        });
+      });
+    </script>
+  </body>
+</html>
